@@ -12,4 +12,4 @@ h("h2 text")
 ); 
 ?>
 ```
-see it in action <a href="x35gaminghub.rf.gd">Here</a>
+see it in action <a href="http://x35gaminghub.rf.gd">Here</a>
