@@ -20,6 +20,7 @@ $sitedesc = "another array cms site";
 $owner = "John Doe";
 $webmstremail = "john.doe@example.net";
 
+
 // ip for minecraft server
 // $ip = "mc.example.net:25565";
 $ip = "mc.example.net:25565";

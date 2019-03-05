@@ -2,18 +2,19 @@
 <?php include('config.php') ?>
 <html>
 	<head>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
 		<title><?php echo $sitename ?></title>
 		<style>
-			#header {
-			    background-color  : <?php echo $headcolor ?>;
-		    	border            : 1px solid black  ;
-		    	padding           : 5px              ;
+		#header {
+    		            background-color  : <?php echo $headcolor ?>;
+		            border            : 1px solid black  ;
+		    	    padding           : 5px              ;
 			    margin            : 5px              ;
-	    		text-align        : center           ;
+	    		    text-align        : center           ;
 			}
 			
-			#navbar {
+		#navbar {
 			    background-color  : <?php echo $navcolor ?> ;
 			/*  height            : 200px            ;  */
 			    width             : 90%              ;
@@ -21,19 +22,19 @@
 			    border            : 1px solid black  ;
 			    padding           : 5px              ;
 			    margin            : auto             ;
-	    		text-align        : left             ;
+	    		    text-align        : left             ;
 			}
 			
-			#content {
-				background-color  : <?php echo $contcolor ?>;
+		#content {
+		        background-color  : <?php echo $contcolor ?>;
 		        height            : 400px            ; 
 		    	width             : 90%              ;  
-				float             : center           ;
-				border            : 1px solid black  ;
-			    padding           : 5px              ;
-			    margin            : auto             ;
+		        float             : center           ;
+			border            : 1px solid black  ;
+		        padding           : 5px              ;
+                        margin            : auto             ;
 	    		text-align        : left             ;
-                overflow          : auto             ;
+                        overflow          : auto             ;
 	    	}
 	    	
 	    	#footer {
@@ -69,7 +70,8 @@
         </div>
         
         </div>
-		<div id="content"><?php 
+		<div id="content"><?php
+        include("cms/formatextensions.php")
 function h($msg) {
 return "<h2>" . $msg . "</h2>" ;
 };
@@ -87,11 +89,13 @@ require( "pages" . "/" . "n" . $_GET["page"] . ".php" );
 foreach ($blog as $value) {
   echo "$value <br>";
 };
-echo "<p>this page was made with ❤ using <a href=\"http://x35gaminghub.rf.gd/?page=arraycms\"><b>arraycms</b></a>...</p>"
+echo "<p>this page was made with ❤ using <a href=\"http://x35gaminghub.rf.gd/?page=arraycms\"><b>arraycms</b></a>...</p>";
+include("cms/extensions.php")
 ?>  </div>
 		<div id="footer">
 		© <?php echo $owner ?>
 		<br><?php echo hyperlink($webmstremail, "mailto:" . $webmstremail ) ?>
+
 		</div>
 		
 	</body>
