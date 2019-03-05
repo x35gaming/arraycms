@@ -1,3 +1,0 @@
-<?php 
-// extensions here
-?>
