@@ -78,6 +78,9 @@ return "<h2>" . $msg . "</h2>" ;
 function b($msg) {
 return "<b>" . $msg . "</b>" ;
 };
+function hyperlink($name,$link) {
+return "<a href=\"" . $link . "\" >" . $name . "</a>";
+};
 function img($url) {
 return "<img src=\"" . $url . "\"/>" ;
 };
@@ -90,8 +93,9 @@ echo "<p>this page was made with ❤ using <a href=\"http://x35gaminghub.rf.gd/?
 include("cms/extensions.php")
 ?>  </div>
 		<div id="footer">
-		© <?php echo $owner ?> <br>
-                        <a href="mailto:<?php echo $webmstremail?>"><?php echo $webmstremail ?></a>
+		© <?php echo $owner ?>
+		<br><?php echo hyperlink($webmstremail, "mailto:" . $webmstremail ) ?>
+
 		</div>
 		
 	</body>

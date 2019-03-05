@@ -10,16 +10,18 @@
 // e.g $sitename = "array cms";
 $sitename = "array cms";
 
-//the description
+// the description
 // e.g $sitedesc = "another array cms site";
 $sitedesc = "another array cms site";
 
-//owner
+// webmaster details
 // e.g $owner = "John Doe";
+// $webmstremail = "john.doe@example.net"
 $owner = "John Doe";
-$webmstremail = "john@example.com";
+$webmstremail = "john.doe@example.net";
 
-//ip for minecraft server
+
+// ip for minecraft server
 // $ip = "mc.example.net:25565";
 $ip = "mc.example.net:25565";
 
@@ -28,6 +30,7 @@ $ip = "mc.example.net:25565";
  * #                                     #
  * #######################################
  */ 
+ 
  // $property = "#123abc";
  // leave at default unless you want to change the colors
  
@@ -40,4 +43,11 @@ $contcolor = "#eeeeee";
  // footer color
 $ftrcolor  = "#ffbd47";
 
+/* #######################################
+ * # pages                               #
+ * #                                     #
+ * #######################################
+ */ 
+ $pages = array( hyperlink("forum","/forum") );
+ 
 ?>
