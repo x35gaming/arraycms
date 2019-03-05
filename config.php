@@ -21,7 +21,7 @@ $webmstremail = "john@example.com";
 
 //ip for minecraft server
 // $ip = "mc.example.net:25565";
-$ip = "mc.example.net:25565"
+$ip = "mc.example.net:25565";
 
 /* #######################################
  * # styling                             #
