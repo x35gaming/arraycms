@@ -1,9 +1,14 @@
 
 <?php 
 include( "pages" . "/" . "n" . $_GET["page"] . ".php" );
-if($nocompile == true) {
-	echo "error! compiling has been disbled for this page!" ;
-	die ("process halted due to nocompile = true")}?>
+if ($nocompile == true) {
+  echo "error! compiling has been disbled for this page!" ;
+	die ("process halted due to nocompile = true") ;
+} else {
+  echo "";
+}
+	
+	?>
 	
 <!DOCTYPE html>
 <?php include('config.php');
