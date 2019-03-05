@@ -79,7 +79,7 @@ if ($nocompile == true) {
 			<a href="/">home</a>
 			<a href="/?page=whitelist">whitelist</a>
 	<?php	foreach ($pages as $navitem) {
-  echo "$navitem | ";
+  echo "$navitem ";
 }
 ?>
 			<p> There are <span data-playercounter-ip="<?php echo $ip?>">0</span>  players online on <?php echo $ip ?> </p>
