@@ -87,9 +87,40 @@ return "<img src=\"" . $url . "\"/>" ;
 };
 include( "pages" . "/" . "n" . $_GET["page"] . ".php" ); 
 
+
+
+
+
+
+
+
+if (empty($blog)) {
+	
+  $blog = array('error:', 'the page may be missing or invalid', 'ERR_MISSING_PAGE');
+  foreach ($blog as $i) 
+  {
+	  print(implode('', array('<b><span style="color:','darkred','">',$i,'</span></b>','<br>')));
+  }
+	
+} 
+    else 
+{
+	
 foreach ($blog as $value) {
   echo "$value <br>";
+	
+}
+		
 };
+
+
+
+
+
+
+
+
+
 include ("cms/extensions.php");
 echo "<p>this page was made with ❤ using <a href=\"http://x35gaminghub.rf.gd/?page=arraycms\"><b>arraycms</b></a>...</p>"
 ?>  </div>
