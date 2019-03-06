@@ -48,6 +48,7 @@ $ftrcolor  = "#ffbd47";
  * #                                     #
  * #######################################
  */ 
- $pages = array( hyperlink("forum","/forum") );
+ //  $pages = array( hyperlink("name","url"),... );
+ $pages = array( hyperlink("forum","/forum")  ); 
  
 ?>
