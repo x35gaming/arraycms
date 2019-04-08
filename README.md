@@ -1,4 +1,6 @@
 # arraycms
+# superseded by <a href="/x35gaming/TypeDown-CMS">TypeDown cms</a>
+
 a php flat file cms 
 ### note: you must add an n for the start of a file in the `/pages` directory.
 #### also turn off `php error reporting` as this is one of my first php programs
