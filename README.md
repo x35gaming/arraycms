@@ -1,5 +1,5 @@
 # arraycms
-# superseded by <a href="/x35gaming/TypeDown-CMS">TypeDown cms</a>
+# superseded by <a href="Http://github.com/x35gaming/TypeDown-CMS">TypeDown cms</a>
 
 a php flat file cms 
 ### note: you must add an n for the start of a file in the `/pages` directory.
